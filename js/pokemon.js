@@ -28,6 +28,8 @@ function buscarPokemon() {
             lista.innerHTML = habilidades.join('')
             var imagem = poke_imagens[resultado.data.name]
             document.querySelector('#pokeImage').src = imagem
+            var tipos =  resultado.data.types.map(tipo => tipo.type.name)
+            document.querySelector('#listaTipos').innerHTML = tipos.join(', ')
         })
 }
 
