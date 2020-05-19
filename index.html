@@ -30,10 +30,10 @@
                         <div class="input-field col s12">
                             <i class="material-icons prefix">search</i>
                             <input type="text" id="autocomplete-input" class="autocomplete">
-                            <label for="autocomplete-input">Digite o HABILIDADE 1</label>
+                            <label for="autocomplete-input">Digite o nome de um pokemon</label>
                         </div>
                         <div class="col s2">
-                            <a class="waves-effect waves-light btn">button</a>
+                            <button class="waves-effect waves-light btn" onclick="buscarPokemon()">Pesquisar</button>
                         </div>
                     </div>
                 </div>
@@ -44,29 +44,34 @@
                 <div class="col s10 offset-s1 m4 offset-m1">
                     <div class="card">
                         <div class="card-image">
-                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png">
+                            <img id="pokeImage" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png">
                         </div>
                     </div>
                 </div>
                 <div class="col s10 m6 center-align">
-                    <h3>NOME DO POKEMON</h3>
-                    <p>HABILIDADE 1</p>
-                    <p>HABILIDADE 2</p>
+                    <h3 id="nomePokemon"></h3>
+                    <ul id="listaHabilidades"></ul>
                 </div>
             </div>
         </div>
-        <div class="row" >
+        <div class="row">
             <div class="col s8 offset-s2">
                 <div class="carousel">
-                <a class="carousel-item" href="#one!"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"></a>
-                <a class="carousel-item" href="#two!"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"></a>
-                <a class="carousel-item" href="#three!"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/354.png"></a>
-                <a class="carousel-item" href="#four!"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png"></a>
-                <a class="carousel-item" href="#five!"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png"></a>
+                    <a class="carousel-item" href="#one!"><img
+                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"></a>
+                    <a class="carousel-item" href="#two!"><img
+                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"></a>
+                    <a class="carousel-item" href="#three!"><img
+                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/354.png"></a>
+                    <a class="carousel-item" href="#four!"><img
+                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png"></a>
+                    <a class="carousel-item" href="#five!"><img
+                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png"></a>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/pokemon.js"></script>
 </body>
