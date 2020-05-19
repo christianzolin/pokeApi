@@ -33,7 +33,7 @@
                             <label for="autocomplete-input">Digite o nome de um pokemon</label>
                         </div>
                         <div class="col s2">
-                            <button class="waves-effect waves-light btn" onclick="buscarPokemon()">Pesquisar</button>
+                            <button class="waves-effect waves-light btn" onclick="onPress()">Pesquisar</button>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                 <div class="col s10 offset-s1 m4 offset-m1">
                     <div class="card">
                         <div class="card-image">
-                            <img id="pokeImage" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png">
+                            <img id="pokeImage" src="https://img.elo7.com.br/product/zoom/24503A6/adesivo-decorativo-pokebola-pokemon.jpg">
                         </div>
                     </div>
                 </div>
@@ -56,19 +56,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col s8 offset-s2">
-                <div class="carousel">
-                    <a class="carousel-item" href="#one!"><img
-                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"></a>
-                    <a class="carousel-item" href="#two!"><img
-                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"></a>
-                    <a class="carousel-item" href="#three!"><img
-                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/354.png"></a>
-                    <a class="carousel-item" href="#four!"><img
-                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png"></a>
-                    <a class="carousel-item" href="#five!"><img
-                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png"></a>
-                </div>
+            <div class="col s7 offset-s3">
+                <div class="carousel" id="carouselPoke"></div>
             </div>
         </div>
     </div>
